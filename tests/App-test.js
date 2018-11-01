@@ -2,9 +2,9 @@ import expect from 'expect'
 import React from 'react'
 import {render, unmountComponentAtNode} from 'react-dom'
 
-import App from 'src/App'
+import Index from 'src/Pages/App/index'
 
-describe('App component', () => {
+describe('Index component', () => {
   let node
 
   beforeEach(() => {
@@ -16,7 +16,7 @@ describe('App component', () => {
   })
 
   it('displays a welcome message', () => {
-    render(<App/>, node, () => {
+    render(<Index/>, node, () => {
       expect(node.textContent).toContain('Welcome to React')
     })
   })
